@@ -47,3 +47,13 @@ En este ejericico práctico, configuraremos tres alarmas de facturación en **AW
 7.  Haz clic en **Crear alarma**.
 
 Repite el paso 3 para los otros dos umbrales de facturación. ¡Listo! Ya tienes configuradas tus alarmas de gastos básicos en AWS.
+
+# Resultado Esperado
+![Imagen 1](CloudWatch_1.png)
+
+![Imagen 2](CloudWatch_2.png)
+
+![Imagen 3](CloudWatch_3.png)
+
+
+
