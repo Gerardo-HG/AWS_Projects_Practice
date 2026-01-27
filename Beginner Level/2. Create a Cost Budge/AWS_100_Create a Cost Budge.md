@@ -105,3 +105,5 @@ Este presupuesto es útil para cuentas que deberían tener cero actividad (ej. u
 
 ## Resultado Esperado
 
+![Imagen 1](CostBudge_1.png)
+
