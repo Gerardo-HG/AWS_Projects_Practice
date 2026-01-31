@@ -15,12 +15,15 @@ Un sitio sencillo con estilos CSS embebidos para dar la bienvenida a AWS.
 
 ### 2. Dockerfile
 Utilizamos una imagen base de **Nginx Alpine** por su eficiencia y ligereza:
-```dockerfile
+
+dockerfile
+```
 FROM nginx:alpine
 COPY index.html /usr/share/nginx/html
 EXPOSE 80
+```
 
-## Pasos para el Despliegue
+## 3. Pasos para el Despliegue
 
 ### 1. Crear el Repositorio en ECR
 1. Ir a la consola de Amazon ECR
@@ -28,22 +31,9 @@ EXPOSE 80
 3. Nombre del repositorio **simple-web-app**
 4. Mantener la configuración de visibilidad como **Private**
 
-### 2. Crear la imagen Dockerfile
+![Previsualizacion](ECR_1.png)
 
-1. Pegar el siguiente código
-```
-#Use the Nginx image as the base image
-FROM nginx:alpine
-
-# Copy the HTML file into the Nginx default public directory
-COPY index.html /usr/share/nginx/html
-
-# Expose port 80
-EXPOSE 80
-
-```
-
-### 3. Ejecución de comandos
+### 4. Ejecución de comandos
 
 1. Tener instalado la librería **aws configure** en el sistema operativo o el entorno virtual de VSCode
 2. Tener un usuario IAM la cual contiene el permiso o política **AmazonEC2ContainerRegistryFullAccess**
@@ -52,6 +42,10 @@ EXPOSE 80
 5. Dirigirse al repostorio privado **simple-web-app**
 6. Hacer clic en **Ver comandos de envío**
 7. Ejecutar los siguientes codigos de manera secuencial en la terminal
+
+![Comandos](ECR_2.png)
+
+
 8. Actualizar las imágenes en **simple-web-app**
 
 
@@ -59,4 +53,4 @@ Listo ya estaría desplegada una imagen Docker en Amazon ECR
 
 ## Resultado Esperado
 
-![Resultado Esperado](ECR_1.png)
+![Resultado Esperado](ECR_3.png)
