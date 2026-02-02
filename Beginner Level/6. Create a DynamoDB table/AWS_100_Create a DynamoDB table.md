@@ -75,6 +75,3 @@ Al finalizar este ejercicio, tendrás una tabla NoSQL funcional con datos insert
 - Aprender a utilizar **DynamoDB Streams** para reaccionar a cambios en los datos.
 - Configurar **Auto Scaling** para manejar picos de tráfico.
 - Implementar un **Global Secondary Index (GSI)** para realizar búsquedas por otros atributos.
-
----
-**¿Te gustaría que te ayude a crear un ejemplo de código en Python (boto3) para insertar 100 registros automáticamente en esta tabla?**
